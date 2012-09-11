@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 /**
- A simple class showing Unit Testing
+ A simple class showing Unit Testing.
  */
 @interface GCTPerson : NSObject {
     int age;

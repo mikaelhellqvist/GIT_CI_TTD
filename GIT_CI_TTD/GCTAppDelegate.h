@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-/** This project has been created as an example on how to implement:
+/** This project has been created as an example on how to implement: (testing AppleDoc generation)
  
     1. Documentation using AppleDoc
         Install AppleDoc from [GitHub](https://github.com/tomaz/appledoc)
