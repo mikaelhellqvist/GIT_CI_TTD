@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2A17FE5015FF55F000D042F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A17FE4F15FF55F000D042F5 /* README.md */; };
 		2A1E453815FF20DF00A89872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453715FF20DF00A89872 /* UIKit.framework */; };
 		2A1E453A15FF20DF00A89872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453915FF20DF00A89872 /* Foundation.framework */; };
 		2A1E453C15FF20DF00A89872 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453B15FF20DF00A89872 /* CoreGraphics.framework */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A17FE4F15FF55F000D042F5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		2A1E453315FF20DF00A89872 /* GIT_CI_TTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIT_CI_TTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1E453715FF20DF00A89872 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A1E453915FF20DF00A89872 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +139,7 @@
 				2A1E454D15FF20DF00A89872 /* GCTViewController.m */,
 				2A1E458D15FF380600A89872 /* GCTPerson.h */,
 				2A1E458E15FF380600A89872 /* GCTPerson.m */,
+				2A17FE4F15FF55F000D042F5 /* README.md */,
 			);
 			path = GIT_CI_TTD;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				2A1E454215FF20DF00A89872 /* InfoPlist.strings in Resources */,
 				2A1E454B15FF20DF00A89872 /* MainStoryboard.storyboard in Resources */,
+				2A17FE5015FF55F000D042F5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"GIT_CI_TDD\" \\\n--project-company \"Crispin Porter + Bogusky\" \\\n--company-id \"com.cpbeurope\" \\\n--docset-atom-filename \"GIT_CI_TDD.atom\" \\\n--docset-feed-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/\" \\\n--output \"~/help\" \\\n--publish-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--exit-threshold 2 \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore \"*.m\" \\\n--ignore UnitTest \\\n\"${PROJECT_DIR}\"";
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"GIT_CI_TDD\" \\\n--project-company \"Crispin Porter + Bogusky\" \\\n--company-id \"com.cpbeurope\" \\\n--docset-atom-filename \"GIT_CI_TDD.atom\" \\\n--docset-feed-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/\" \\\n--output \"~/help\" \\\n--publish-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--exit-threshold 2 \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore \"*.m\" \\\n--ignore UnitTest \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\n\"${PROJECT_DIR}\"";
 		};
 		2A1E457115FF285800A89872 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -500,6 +504,7 @@
 				2A1E456815FF20DF00A89872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A1E456915FF20DF00A89872 /* Build configuration list for PBXNativeTarget "GIT_CI_TTDTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				2A1E456B15FF20DF00A89872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A1E456D15FF210600A89872 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				2A1E456F15FF210600A89872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
