@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2A1E456C15FF210600A89872 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2A1E456D15FF210600A89872 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				2A1E457015FF210D00A89872 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2A1E453815FF20DF00A89872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453715FF20DF00A89872 /* UIKit.framework */; };
 		2A1E453A15FF20DF00A89872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453915FF20DF00A89872 /* Foundation.framework */; };
@@ -20,6 +34,8 @@
 		2A1E455815FF20DF00A89872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E453915FF20DF00A89872 /* Foundation.framework */; };
 		2A1E456015FF20DF00A89872 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A1E455E15FF20DF00A89872 /* InfoPlist.strings */; };
 		2A1E456315FF20DF00A89872 /* GIT_CI_TTDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E456215FF20DF00A89872 /* GIT_CI_TTDTests.m */; };
+		2A1E458F15FF380600A89872 /* GCTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E458E15FF380600A89872 /* GCTPerson.m */; };
+		2A1E459015FF380600A89872 /* GCTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E458E15FF380600A89872 /* GCTPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +68,8 @@
 		2A1E455F15FF20DF00A89872 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A1E456115FF20DF00A89872 /* GIT_CI_TTDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIT_CI_TTDTests.h; sourceTree = "<group>"; };
 		2A1E456215FF20DF00A89872 /* GIT_CI_TTDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIT_CI_TTDTests.m; sourceTree = "<group>"; };
+		2A1E458D15FF380600A89872 /* GCTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTPerson.h; sourceTree = "<group>"; };
+		2A1E458E15FF380600A89872 /* GCTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				2A1E453D15FF20DF00A89872 /* GIT_CI_TTD */,
+				2A1E453E15FF20DF00A89872 /* Supporting Files */,
 				2A1E455B15FF20DF00A89872 /* GIT_CI_TTDTests */,
 				2A1E453615FF20DF00A89872 /* Frameworks */,
 				2A1E453415FF20DF00A89872 /* Products */,
@@ -116,7 +135,8 @@
 				2A1E454915FF20DF00A89872 /* MainStoryboard.storyboard */,
 				2A1E454C15FF20DF00A89872 /* GCTViewController.h */,
 				2A1E454D15FF20DF00A89872 /* GCTViewController.m */,
-				2A1E453E15FF20DF00A89872 /* Supporting Files */,
+				2A1E458D15FF380600A89872 /* GCTPerson.h */,
+				2A1E458E15FF380600A89872 /* GCTPerson.m */,
 			);
 			path = GIT_CI_TTD;
 			sourceTree = "<group>";
@@ -130,6 +150,7 @@
 				2A1E454515FF20DF00A89872 /* GIT_CI_TTD-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = GIT_CI_TTD;
 			sourceTree = "<group>";
 		};
 		2A1E455B15FF20DF00A89872 /* GIT_CI_TTDTests */ = {
@@ -160,6 +181,7 @@
 			buildPhases = (
 				2A1E452F15FF20DF00A89872 /* Sources */,
 				2A1E453015FF20DF00A89872 /* Frameworks */,
+				2A1E457115FF285800A89872 /* ShellScript */,
 				2A1E453115FF20DF00A89872 /* Resources */,
 			);
 			buildRules = (
@@ -214,6 +236,7 @@
 			targets = (
 				2A1E453215FF20DF00A89872 /* GIT_CI_TTD */,
 				2A1E455315FF20DF00A89872 /* GIT_CI_TTDTests */,
+				2A1E456C15FF210600A89872 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +275,32 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		2A1E457015FF210D00A89872 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"GIT_CI_TDD\" \\\n--project-company \"Crispin Porter + Bogusky\" \\\n--company-id \"com.cpbeurope\" \\\n--docset-atom-filename \"GIT_CI_TDD.atom\" \\\n--docset-feed-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"http://github.com/mikaelhellqvist/GIT_CI_TDD/\" \\\n--output \"~/help\" \\\n--publish-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--exit-threshold 2 \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore \"*.m\" \\\n--ignore UnitTest \\\n\"${PROJECT_DIR}\"";
+		};
+		2A1E457115FF285800A89872 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Increment the build number with every build.\nBUILDNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nBUILDNUM=$(($BUILDNUM + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILDNUM\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n\n# this splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,6 +311,7 @@
 				2A1E454415FF20DF00A89872 /* main.m in Sources */,
 				2A1E454815FF20DF00A89872 /* GCTAppDelegate.m in Sources */,
 				2A1E454E15FF20DF00A89872 /* GCTViewController.m in Sources */,
+				2A1E458F15FF380600A89872 /* GCTPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1E456315FF20DF00A89872 /* GIT_CI_TTDTests.m in Sources */,
+				2A1E459015FF380600A89872 /* GCTPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +467,20 @@
 			};
 			name = Release;
 		};
+		2A1E456E15FF210600A89872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A1E456F15FF210600A89872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,6 +506,14 @@
 			buildConfigurations = (
 				2A1E456A15FF20DF00A89872 /* Debug */,
 				2A1E456B15FF20DF00A89872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A1E456D15FF210600A89872 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1E456E15FF210600A89872 /* Debug */,
+				2A1E456F15FF210600A89872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

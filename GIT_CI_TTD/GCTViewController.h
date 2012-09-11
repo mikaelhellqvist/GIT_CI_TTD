@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/** The View Controller
+*/
 @interface GCTViewController : UIViewController
 
 @end

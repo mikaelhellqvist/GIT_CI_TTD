@@ -8,14 +8,15 @@
 
 #import "GIT_CI_TTDTests.h"
 
+#import "GCTPerson.h"
+
 @implementation GIT_CI_TTDTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
-}
+   
+ }
 
 - (void)tearDown
 {
@@ -24,9 +25,13 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void) testShowPersonName
 {
-    STFail(@"Unit tests are not implemented yet in GIT_CI_TTDTests");
+    NSString *firstName = @"Bosse";
+    GCTPerson *person = [[GCTPerson alloc] initWithFirstName:firstName];
+    STAssertNotNil(person, @"Couldn't allocate GCTPerson");
+
+    STAssertTrue(firstName == person.firstName, @"The name of the person should be %@ and not %@", firstName, person.firstName);
 }
 
 @end

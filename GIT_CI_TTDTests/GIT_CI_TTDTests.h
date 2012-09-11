@@ -7,7 +7,10 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-
+/**
+The Test Class
+List of macros can be found [here](http://www.impigermobile.com/blog/introduction-to-xcode-unit-testing-in-ios/)
+*/
 @interface GIT_CI_TTDTests : SenTestCase
 
 @end
