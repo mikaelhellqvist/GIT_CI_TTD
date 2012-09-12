@@ -422,6 +422,7 @@
 				GCC_PREFIX_HEADER = "GIT_CI_TTD/GIT_CI_TTD-Prefix.pch";
 				INFOPLIST_FILE = "GIT_CI_TTD/GIT_CI_TTD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -433,6 +434,7 @@
 				GCC_PREFIX_HEADER = "GIT_CI_TTD/GIT_CI_TTD-Prefix.pch";
 				INFOPLIST_FILE = "GIT_CI_TTD/GIT_CI_TTD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
