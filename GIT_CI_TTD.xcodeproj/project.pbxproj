@@ -451,6 +451,7 @@
 				GCC_PREFIX_HEADER = "GIT_CI_TTD/GIT_CI_TTD-Prefix.pch";
 				INFOPLIST_FILE = "GIT_CI_TTDTests/GIT_CI_TTDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -468,6 +469,7 @@
 				GCC_PREFIX_HEADER = "GIT_CI_TTD/GIT_CI_TTD-Prefix.pch";
 				INFOPLIST_FILE = "GIT_CI_TTDTests/GIT_CI_TTDTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
